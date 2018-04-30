@@ -34,8 +34,32 @@ module.exports = {
 			{
 				test: /\.css$/,
 				use: [MiniCssExtractPlugin.loader, 'css-loader'],
+			},
+			{
+				test: /\.(scss)$/,
+				use: [
+					{
+						// Adds CSS to the DOM by injecting a `<style>` tag
+						loader: 'style-loader'
+					},
+					{
+						// Loader for webpack to process CSS with PostCSS
+						loader: 'postcss-loader',
+						options: {
+							plugins: function () {
+								return [
+									require('autoprefixer')
+								];
+							}
+						}
+					},
+					{
+						// Loads a SASS/SCSS file and compiles it to CSS
+						loader: 'sass-loader'
+					}
+				]
 			}
-		],
+		]
 	},
 	plugins: [
 		new HtmlWebPackPlugin({

@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import PropTypes from 'prop-types';
 import '../styles/css/style.css'
+import 'bootstrap'
 import Head from './head/component/Head'
 import Main from './main/component/Main'
 
