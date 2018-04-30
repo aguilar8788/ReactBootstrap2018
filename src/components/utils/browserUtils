@@ -1,0 +1,11 @@
+export function serverRequest() {
+	let Url = '';
+
+	if (process.env.NODE_ENV === 'production') {
+		Url = ''
+	} else {
+		Url = 'http://localhost:8080'
+	}
+
+	return Url
+}

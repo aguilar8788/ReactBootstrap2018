@@ -4,6 +4,7 @@ import '../styles/css/style.css'
 import 'bootstrap'
 import Head from './head/component/Head'
 import Main from './main/component/Main'
+import Footer from './common/footer/component/Footer'
 
 class App extends Component {
 	render() {
@@ -12,6 +13,7 @@ class App extends Component {
 				<h1>Hello there</h1>
 				<Head />
 				<Main />
+				<Footer />
 				{this.props.children}
 			</div>
 		)
