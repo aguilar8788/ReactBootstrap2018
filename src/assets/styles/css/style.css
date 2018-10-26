@@ -1,0 +1,44 @@
+.app {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 10% auto 15%; }
+  .app .head {
+    grid-row-start: 1;
+    background-color: red; }
+  .app .main {
+    grid-row-start: 2;
+    background-color: grey; }
+  .app .footer {
+    grid-row-start: 3;
+    background-color: green; }
+  .app h1 {
+    color: black; }
+
+html, body {
+  padding: 0;
+  margin: 0; }
+
+.home h1 {
+  color: red; }
+
+.head {
+  display: grid;
+  grid-template-columns: 5% auto; }
+  .head .logo {
+    grid-column-start: 1;
+    align-self: center;
+    padding-left: 10px; }
+  .head .navigation {
+    grid-column-start: 2;
+    align-self: center; }
+    .head .navigation ul {
+      display: flex;
+      flex-direction: row; }
+      .head .navigation ul li {
+        list-style: none;
+        margin: 10px; }
+        .head .navigation ul li a {
+          text-decoration: none; }
+
+/*# sourceMappingURL=style.css.map */

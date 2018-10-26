@@ -1,0 +1,24 @@
+.head {
+  display: grid;
+  grid-template-columns: 5% auto;
+  .logo {
+    grid-column-start: 1;
+    align-self: center;
+    padding-left: 10px;
+  }
+  .navigation {
+    grid-column-start: 2;
+    align-self: center;
+    ul {
+      display: flex;
+      flex-direction: row;
+      li {
+        list-style: none;
+        margin: 10px;
+        a {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
